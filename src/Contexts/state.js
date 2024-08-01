@@ -9,7 +9,7 @@ const State = (props) => {
   //getting data from local storage
   const data = localStorage.getItem('transactions');
   const data2 = JSON.parse(data);
-  console.log(data2)
+  // console.log(data2)
 
 
   const initialTransactions = data2 ? data2 : []; // if data exist in local storage then return data2 otherwise an empty array
@@ -18,12 +18,13 @@ const State = (props) => {
 
 
 /////////////  Adding New Transaction  /////////////////
-const addTransaction = (text, amount) => {
+const addTransaction = (text, amount, date) => {
     const newTransc = {
         "text" : text,
         "amount" : amount,
-        "id": transactions.length + 1
-    }
+        "id": transactions.length + 1,
+        "date": date
+      }
     // add the transaction only when amount is positive and if amount is positive it should be greater than balance amount
     if(amount > 0){
       setTransacions(transactions.concat(newTransc));

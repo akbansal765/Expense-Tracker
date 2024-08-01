@@ -11,11 +11,17 @@ const NewTransaction = () => {
 
   const handleFormSubmit = (e) => {
       e.preventDefault();
+
+      const _date = new Date();
+      const date_1 = _date.toLocaleDateString();
+      const date_2 = _date.toLocaleTimeString();
+      const date = date_1 + ' ' + date_2;
+
       const text = transaction.text;
       const amount = transaction.amount;
-      addTransaction(text, amount);
+      addTransaction(text, amount, date);
       // clearing the input fields
-      setTransacion({text : '', amount : ''})
+      // setTransacion({text : '', amount : ''})
   }
 
   const onChange = (e) => {
