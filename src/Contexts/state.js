@@ -74,6 +74,8 @@ transactionSum();
 
 const balance = income - (-totalExpenses);
 
+/////////////////////////////////////////////////
+
   return (
     <div>
       <context.Provider value={{transactions, addTransaction, delTransaction, totalExpenses, income, balance}}>

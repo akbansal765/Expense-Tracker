@@ -303,3 +303,24 @@ button{
   background-color: rgb(112, 111, 111);
   color: white;
 }
+/* //////////////////////// Date Filter Tags ////////////////// */
+.dateTableHeader{
+  display: flex;
+}
+.selectMonth, .selectYear{
+  position: relative;
+  margin: 0 5px 0 5px;
+  border: none;
+  background-color: rgb(108, 219, 108);
+  color: white;
+}
+.resetTable_btn{
+  position: relative;
+  left: 15%;
+  border: none;
+  background-color: rgb(108, 219, 108);
+  color: white;
+}
+.resetTable_btn:hover{
+  background-color: rgb(56, 109, 56);
+}
