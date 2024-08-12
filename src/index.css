@@ -324,3 +324,70 @@ button{
 .resetTable_btn:hover{
   background-color: rgb(56, 109, 56);
 }
+/* //////////////// RESPONSIVENESS ///////////////////// */
+
+/* /////////////  Phones  /////////////////// */
+@media (max-width: 450px){
+  /* /////// HOME PAGE //////////// */
+  .App{
+    height: 95vh;
+    width: 83%;
+  }
+  .list_content{
+    font-size: 0.9rem;
+  }
+  /* //////////  STATEMENT PAGE  ///////////// */
+  .table_component{
+    width: 150%;
+  }
+  .resetTable_btn{
+    left: 1%;
+  }
+}
+
+/* //////////////  Tablets   /////////////////// */
+@media (min-width: 451px) and (max-width: 600px){
+  /* //////////// HOME PAGE //////////// */
+  .App{
+    height: 100vh;
+    width: 67%;
+  }
+  .resetTable_btn{
+    left: 1%;
+  }
+}
+/* //////////////  Bigger Tablets  /////////////////// */
+@media (min-width: 601px) and (max-width: 840px){
+  /* //////////// HOME PAGE //////////// */
+  .App{
+    height: 104vh;
+    width: 57%;
+    margin-top: 2%;
+  }
+  .resetTable_btn{
+    left: 1%;
+  }
+}
+@media (min-width: 841px) and (max-width: 1000px){
+  /* //////////// HOME PAGE //////////// */
+  .App{
+    height: 104vh;
+    width: 57%;
+    margin-top: 2%;
+  }
+  .resetTable_btn{
+    left: 1%;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px){
+  .resetTable_btn{
+    left: 1%;
+  }
+}
+
+/* ////////////////////  LANDSCAPE MODE QUERIES  ///////////////// */
+@media (max-height: 400px) and (orientation: landscape){
+  .App{
+    height: 140vh;
+  }
+}
